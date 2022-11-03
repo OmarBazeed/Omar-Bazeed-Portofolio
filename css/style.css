@@ -26,6 +26,7 @@ html {
 body {
     font-family: 'Poppins', sans-serif;
     background-color: var(--main-background);
+    overflow-x: hidden;
 }
 
 ul {
@@ -83,6 +84,7 @@ img {
 
 .navbar {
     background: var(--navbar-background);
+    max-width: 100%;
 }
 
 .navbar-brand {
@@ -150,12 +152,14 @@ img {
 .contactSection {
     height: 100vh;
     position: relative;
+    overflow-x: hidden;
+    width: 100%;
 }
 
 .mainDiv,
 .mainAbout {
     position: absolute;
-    top: 49%;
+    top: 45%;
     left: 50%;
     transform: translate(-50%, -49%);
     padding: 0 20px;
@@ -293,6 +297,7 @@ img {
 
 .qualificationContent {
     margin-top: 80px;
+    padding-left: 10px;
 }
 
 .workContent {
