@@ -159,10 +159,17 @@ img {
 .mainDiv,
 .mainAbout {
     position: absolute;
-    top: 45%;
+    top: 48%;
     left: 50%;
     transform: translate(-50%, -49%);
     padding: 0 20px;
+}
+
+@media (max-width:425px) {
+    .mainDiv,
+    .mainAbout {
+        top: 42%;
+    }
 }
 
 .content {
@@ -458,9 +465,13 @@ img {
 /*portofolio*/
 
 .swiper {
-    width: 100%;
+    width: 75%;
     padding-top: 50px;
     padding-bottom: 50px;
+}
+
+.swiper-wrapper {
+    width: 75% !important;
 }
 
 .swiper-slide {
@@ -484,6 +495,11 @@ img {
     border-radius: 30px;
 }
 
+.swiper-slide-data h3 {
+    filter: drop-shadow(2px 4px 6px tomato);
+    font-size: larger;
+}
+
 .swiper-slide-data button {
     filter: drop-shadow(2px 3px 5px black);
 }
@@ -501,19 +517,44 @@ img {
     }
 }
 
-@media screen and (max-width:400px) {
+@media screen and (max-width:375px) {
+    .swiper {
+        width: 90%;
+    }
     .swiper-slide-data {
-        width: 250px;
+        width: 135px;
+    }
+    .swiper-slide-data p {
+        display: none;
+    }
+    .swiper-slide-data h3 {
+        filter: none;
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width:376px) and (max-width:500px) {
+    .swiper {
+        width: 80%;
+    }
+    .swiper-wrapper {
+        width: 80% !important;
+    }
+    .swiper-slide-data {
+        width: 215px;
     }
     .swiper-slide-data p {
         font-size: 13px;
+    }
+    .swiper-slide-data h3 {
+        filter: none;
     }
 }
 
 .description {
     color: #2a0845;
-    font-weight: bold;
     font-family: 'unicons-line';
+    line-height: 1.5;
 }
 
 
